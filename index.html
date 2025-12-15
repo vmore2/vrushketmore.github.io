@@ -1050,6 +1050,38 @@
         </div>
     </footer>
 
+    <!-- Floating Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <button class="chatbot-fab" id="chatbotFab" onclick="toggleChatbot()">
+            <div class="fab-icon">
+                <i class="fas fa-robot" id="fabIconOpen"></i>
+                <i class="fas fa-times" id="fabIconClose"></i>
+            </div>
+            <div class="fab-pulse"></div>
+            <div class="fab-pulse delay"></div>
+        </button>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-window-header">
+                <div class="chatbot-window-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-window-info">
+                    <h4>Chat with Vrushket's AI</h4>
+                    <span class="online-status">
+                        <span class="online-dot"></span>
+                        Online
+                    </span>
+                </div>
+                <button class="chatbot-window-close" onclick="toggleChatbot()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-window-body">
+                <iframe src="https://vrushket-vrushket-assistant.hf.space" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

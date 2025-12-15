@@ -452,3 +452,29 @@ document.addEventListener('keydown', (e) => {
         closePowerBIModal();
     }
 });
+
+// Floating Chatbot Widget
+function toggleChatbot() {
+    const widget = document.getElementById('chatbotWidget');
+    widget.classList.toggle('open');
+}
+
+// Close chatbot when clicking outside
+document.addEventListener('click', (e) => {
+    const widget = document.getElementById('chatbotWidget');
+    if (widget && widget.classList.contains('open')) {
+        if (!widget.contains(e.target)) {
+            widget.classList.remove('open');
+        }
+    }
+});
+
+// Close chatbot on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const widget = document.getElementById('chatbotWidget');
+        if (widget) {
+            widget.classList.remove('open');
+        }
+    }
+});
