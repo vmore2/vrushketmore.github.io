@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vrushket More - AI/ML Engineer & Data Scientist. Building intelligent systems that transform data into actionable insights. MS in Computer Science with 3+ years of internship experience.">
+    <meta name="keywords"
+        content="Machine Learning, AI, Data Science, Python, TensorFlow, PyTorch, NLP, Computer Vision, Business Intelligence">
+    <meta name="author" content="Vrushket More">
+    <title>Vrushket More | AI/ML Engineer & Data Scientist</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cursor Trail Effect -->
+    <div class="cursor-trail"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">VM</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#publications" class="nav-link">Research</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="neural-network"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Available for opportunities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Hi, I'm</span>
+                <span class="title-name gradient-text">Vrushket More</span>
+            </h1>
+            <div class="hero-roles">
+                <span class="role-prefix">I'm a</span>
+                <span class="typing-text" id="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Transforming complex data into intelligent solutions. Building AI systems that learn, adapt, and deliver
+                measurable impact.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Internship Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number-static">3.87</span>
+                    <span class="stat-suffix" style="font-size: 1rem;"> / 4.0</span>
+                    <span class="stat-label">GPA (MS)</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number-static">3.93</span>
+                    <span class="stat-suffix" style="font-size: 1rem;"> / 4.0</span>
+                    <span class="stat-label">GPA (BS)</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary magnetic">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary magnetic">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Crafting Intelligence<br><span class="gradient-text">From Data</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Data Analytics</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-robot"></i>
+                        <span>AI/ML</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-database"></i>
+                        <span>Big Data</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a <strong>Business Intelligence professional</strong> pursuing my <strong>MS in Computer
+                            Science</strong> at Binghamton University with a stellar <strong>3.87 GPA</strong>. With
+                        <strong>3+ years</strong> of hands-on internship experience, I specialize in turning raw data
+                        into strategic insights.
+                    </p>
+                    <p>
+                        My passion lies at the intersection of <strong>Machine Learning</strong>, <strong>Data
+                            Science</strong>, and <strong>Generative AI</strong>. I've built systems like
+                        <strong>TheraMind</strong>—a multi-agent healthcare pipeline achieving <strong>92%
+                            recall</strong> and <strong>99.7% specificity</strong>—and I'm always pushing the boundaries
+                        of what's possible with data.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Education</h4>
+                                <p>MS Computer Science @ SUNY Binghamton</p>
+                                <span class="highlight-meta">All A's in AI/ML coursework</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Expertise</h4>
+                                <p>ML/AI • Data Engineering • BI</p>
+                                <span class="highlight-meta">Python, SQL, TensorFlow, PyTorch</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.linkedin.com/in/vrushketmore/" target="_blank"
+                        class="btn btn-outline magnetic">
+                        <i class="fab fa-linkedin"></i>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A showcase of AI/ML innovations and data-driven solutions</p>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-layer-group"></i>
+                    <span>All Projects</span>
+                </button>
+                <button class="filter-btn" data-filter="ai-ml">
+                    <i class="fas fa-brain"></i>
+                    <span>AI/ML Models</span>
+                </button>
+                <button class="filter-btn" data-filter="web-app">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Apps</span>
+                </button>
+                <button class="filter-btn" data-filter="data-science">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Data Science</span>
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- TheraMind -->
+                <article class="project-card featured" data-category="ai-ml">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-bg-1">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-tag">Featured Research</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TheraMind</h3>
+                        <p class="project-description">
+                            Multi-agent healthcare analytics pipeline processing 10,000+ PubMed case reports for NSCLC
+                            clinical evidence. First author on Research Square preprint.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">92%</span>
+                                <span class="metric-label">Recall</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">99.7%</span>
+                                <span class="metric-label">Specificity</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">70%</span>
+                                <span class="metric-label">Faster</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Multi-Agent</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://doi.org/10.21203/rs.3.rs-6787930/v1" target="_blank" class="project-link">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Read Paper</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Peeker AI -->
+                <article class="project-card" data-category="web-app ai-ml">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-bg-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Peeker AI</h3>
+                        <p class="project-description">
+                            AI-powered customer analytics platform that expanded paying customer base by 50% through
+                            intelligent ETL pipelines and personalization.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">50%</span>
+                                <span class="metric-label">Growth</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">93%</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ETL</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://peeker.ai" target="_blank" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DermWise -->
+                <article class="project-card" data-category="ai-ml web-app">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-bg-3">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">DermWise</h3>
+                        <p class="project-description">
+                            AI-powered dermatology diagnostic assistant leveraging deep learning for skin condition
+                            analysis and classification.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Healthcare AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vrushketmore/DermWise" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ClimateWise -->
+                <article class="project-card" data-category="data-science">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-bg-4">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ClimateWise</h3>
+                        <p class="project-description">
+                            Data-driven climate analytics platform with predictive modeling for environmental pattern
+                            analysis and visualization.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Visualization</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vrushketmore/ClimateWise" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Clash of Trails -->
+                <article class="project-card" data-category="data-science web-app">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-bg-5">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Clash of Trails</h3>
+                        <p class="project-description">
+                            Interactive trail recommendation system using data science to match hikers with their
+                            perfect outdoor adventures.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Recommendation</span>
+                            <span class="tech-tag">Data Science</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vrushketmore/Clash-of-Trails" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- English to French Translation -->
+                <article class="project-card" data-category="ai-ml">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-bg-6">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-tag">HuggingFace</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EN→FR Translation Model</h3>
+                        <p class="project-description">
+                            Fine-tuned MarianMT model for English to French translation, trained on KDE4 dataset for
+                            high-quality translations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Fine-tuning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://huggingface.co/vrushketmore/marian-fine-tuned-kde4-en-to-fr"
+                                target="_blank" class="project-link">
+                                <i class="fas fa-cube"></i>
+                                <span>HuggingFace</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Summarization Model -->
+                <article class="project-card" data-category="ai-ml">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-bg-7">
+                            <i class="fas fa-compress-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-tag">HuggingFace</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cross-lingual Summarizer</h3>
+                        <p class="project-description">
+                            MT5-small model fine-tuned for English to Spanish summarization on Amazon reviews dataset.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">mT5</span>
+                            <span class="tech-tag">Summarization</span>
+                            <span class="tech-tag">Multilingual</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://huggingface.co/vrushketmore/mt5-small-finetuned-amazon-en-es"
+                                target="_blank" class="project-link">
+                                <i class="fas fa-cube"></i>
+                                <span>HuggingFace</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Self-Driving Cars -->
+                <article class="project-card" data-category="ai-ml data-science">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-bg-8">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Self-Driving Cars Model</h3>
+                        <p class="project-description">
+                            Real-time lane detection and vehicle classification system using Computer Vision with 98%
+                            precision and 97% recall.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">98%</span>
+                                <span class="metric-label">Precision</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">97%</span>
+                                <span class="metric-label">Recall</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">SVM</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Research Assistant -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <h3>Binghamton University</h3>
+                                <span class="timeline-role">Research Assistant</span>
+                            </div>
+                            <span class="timeline-date">Sep 2024 - Present</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <i class="fas fa-trophy"></i>
+                                <span>Built <strong>TheraMind</strong>—multi-agent healthcare pipeline processing
+                                    10,000+ PubMed case reports; <strong>first author</strong> on Research Square
+                                    preprint</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-chart-line"></i>
+                                <span>Created interactive dashboards tracking KPIs: <strong>92% recall</strong> and
+                                    <strong>99.7% specificity</strong> for clinical case detection</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-database"></i>
+                                <span>Designed ETL workflows with automated validation, reducing data discrepancies by
+                                    <strong>95%</strong> across 50+ sources</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-rocket"></i>
+                                <span>Accelerated pipeline runtime by <strong>70%</strong> through performance
+                                    optimization</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>LangChain</span>
+                            <span>NLP</span>
+                            <span>ETL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peeker AI -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <h3>Peeker AI</h3>
+                                <span class="timeline-role">Data Science & AI Engineering Intern</span>
+                            </div>
+                            <span class="timeline-date">Jul 2024 - Sep 2024</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <i class="fas fa-users"></i>
+                                <span>Engineered customer analytics dashboard that <strong>expanded paying customer base
+                                        by 50%</strong></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-cogs"></i>
+                                <span>Built automated ETL pipeline processing LinkedIn and email data for targeted
+                                    outreach campaigns</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-bullseye"></i>
+                                <span>Improved personalization accuracy from 80% to <strong>93%</strong> through
+                                    optimization</span>
+                            </li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>Python</span>
+                            <span>ETL</span>
+                            <span>Analytics</span>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alphonsol -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <h3>Alphonsol Pvt Ltd.</h3>
+                                <span class="timeline-role">Software Developer Intern</span>
+                            </div>
+                            <span class="timeline-date">Jul 2022 - Jul 2023</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <i class="fas fa-hospital"></i>
+                                <span>Built healthcare data systems (HealthINDIA) using SQL and ASP.NET REST APIs</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Optimized database queries, improving P95 latency by
+                                    <strong>20-25%</strong></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-file-alt"></i>
+                                <span>Automated document classification pipeline processing <strong>3-5k
+                                        documents/month</strong></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-cloud"></i>
+                                <span>Implemented AWS solutions (S3, Lambda, RDS), reducing processing times by
+                                    <strong>30-35%</strong></span>
+                            </li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>SQL</span>
+                            <span>ASP.NET</span>
+                            <span>AWS</span>
+                            <span>ETL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            </div>
+
+            <div class="skills-container">
+                <!-- Programming & Databases -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming & Databases
+                    </h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL (Advanced)</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">R</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL / Snowflake</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ML/AI Frameworks -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        ML/AI Frameworks
+                    </h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">TensorFlow / PyTorch</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">LangChain / GenAI</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">scikit-learn</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">pandas / NumPy</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BI & Visualization -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-chart-pie"></i>
+                        BI & Visualization
+                    </h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Tableau</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Excel (Advanced)</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Sigma Computing</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cloud"></i>
+                        Cloud & Tools
+                    </h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS (S3, Lambda, Glue, RDS)</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Airflow / ETL</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Stack Icons -->
+            <div class="tech-stack">
+                <h3 class="stack-title">Technologies I Work With</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon" title="Python">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="tech-icon" title="TensorFlow">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                            alt="TensorFlow">
+                    </div>
+                    <div class="tech-icon" title="PyTorch">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                            alt="PyTorch">
+                    </div>
+                    <div class="tech-icon" title="PostgreSQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                            alt="PostgreSQL">
+                    </div>
+                    <div class="tech-icon" title="AWS">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="tech-icon" title="Docker">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="tech-icon" title="Git">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="tech-icon" title="Linux">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications" id="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Research</span>
+                <h2 class="section-title">Academic <span class="gradient-text">Publications</span></h2>
+            </div>
+
+            <div class="publication-card">
+                <div class="publication-icon">
+                    <i class="fas fa-scroll"></i>
+                </div>
+                <div class="publication-content">
+                    <span class="publication-badge">First Author • Preprint</span>
+                    <h3 class="publication-title">TheraMind: Multi-Agent Healthcare Analytics Pipeline</h3>
+                    <p class="publication-journal">Research Square • 2024</p>
+                    <p class="publication-abstract">
+                        A novel multi-agent system processing 10,000+ PubMed case reports to surface clinician-ready
+                        NSCLC evidence, achieving 92% recall and 99.7% specificity for clinical case detection.
+                    </p>
+                    <div class="publication-links">
+                        <a href="https://doi.org/10.21203/rs.3.rs-6787930/v1" target="_blank" class="publication-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>View Publication</span>
+                        </a>
+                        <span class="publication-doi">DOI: 10.21203/rs.3.rs-6787930/v1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chatbot Preview Section -->
+    <section class="chatbot-preview" id="chatbot">
+        <div class="container">
+            <div class="chatbot-card">
+                <div class="chatbot-header">
+                    <div class="chatbot-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="chatbot-info">
+                        <h3>Vrushket AI Assistant</h3>
+                        <span class="chatbot-status">
+                            <span class="status-dot"></span>
+                            Coming Soon
+                        </span>
+                    </div>
+                </div>
+                <div class="chatbot-preview-content">
+                    <div class="chat-message bot">
+                        <p>Hi! I'm an AI assistant fine-tuned on Vrushket's experience and projects. Ask me anything
+                            about his skills, work, or how he can help your team!</p>
+                    </div>
+                    <div class="chat-message user">
+                        <p>What are Vrushket's main AI/ML skills?</p>
+                    </div>
+                    <div class="chat-message bot typing">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="chatbot-footer">
+                    <span class="coming-soon-badge">🚀 Fine-tuned LLM • Coming Q1 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Build<br><span class="gradient-text">Something Amazing</span></h2>
+                <p class="section-subtitle">
+                    I'm currently open to new opportunities in AI/ML, Data Science, and Business Intelligence roles.
+                    Let's connect!
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:vmore2@binghamton.edu">vmore2@binghamton.edu</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+16075959733">+1 (607) 595-9733</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Binghamton, NY 13905</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vrushketmore/" target="_blank"
+                        class="social-btn linkedin magnetic">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/vrushketmore" target="_blank" class="social-btn github magnetic">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://huggingface.co/vrushketmore" target="_blank"
+                        class="social-btn huggingface magnetic">
+                        <i class="fas fa-cube"></i>
+                        <span>HuggingFace</span>
+                    </a>
+                    <a href="mailto:vmore2@binghamton.edu" class="social-btn email magnetic">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">VM</span>
+                    <p>Transforming data into intelligent solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vrushket More. Crafted with <i class="fas fa-heart"></i> and lots of coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
