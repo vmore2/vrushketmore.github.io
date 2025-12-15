@@ -434,3 +434,21 @@ console.log(`
 ║                                          ║
 ╚══════════════════════════════════════════╝
 `, 'color: #00d4ff; font-size: 12px; font-family: monospace;');
+
+// Power BI Modal Functions
+function openPowerBIModal() {
+    document.getElementById('powerbiModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closePowerBIModal() {
+    document.getElementById('powerbiModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close modal on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closePowerBIModal();
+    }
+});

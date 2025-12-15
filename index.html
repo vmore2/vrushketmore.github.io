@@ -469,9 +469,67 @@
                         </div>
                     </div>
                 </article>
+
+                <!-- Power BI Dashboards -->
+                <article class="project-card" data-category="data-science" onclick="openPowerBIModal()">
+                    <div class="project-image">
+                        <div class="project-placeholder gradient-bg-9">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-tag">Click to View</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Power BI Dashboards</h3>
+                        <p class="project-description">
+                            Interactive business intelligence dashboards. Click to view gallery.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Data Viz</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link primary">
+                                <i class="fas fa-images"></i>
+                                <span>View Gallery</span>
+                            </span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
+
+    <!-- Power BI Modal -->
+    <div class="powerbi-modal" id="powerbiModal">
+        <div class="modal-overlay" onclick="closePowerBIModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closePowerBIModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 class="gradient-text">Power BI Dashboards</h2>
+                <p>Interactive data visualizations</p>
+            </div>
+            <div class="modal-gallery">
+                <div class="dashboard-item">
+                    <img src="powerbi-survey-dashboard.png" alt="Data Professional Survey Dashboard">
+                    <div class="dashboard-info">
+                        <h4>Data Professional Survey Breakdown</h4>
+                        <p>Analysis of 630+ data professionals with salary insights and programming preferences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/vmore2/Power-bi" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    <span>View Files on GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Experience Section -->
     <section class="experience" id="experience">
