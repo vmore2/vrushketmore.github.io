@@ -1028,75 +1028,26 @@ section {
     position: relative;
 }
 
-/* Model Comparison */
-.model-compare {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    padding: 12px;
+/* Model Beats - Simple Text Comparisons */
+.model-beats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 16px;
 }
 
-.compare-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
-}
-
-.compare-row:last-of-type {
-    margin-bottom: 0;
-}
-
-.compare-name {
-    font-size: 0.7rem;
-    font-weight: 600;
-    width: 65px;
+.beat-item {
+    padding: 6px 12px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 20px;
+    font-size: 0.75rem;
     color: var(--text-secondary);
 }
 
-.compare-row.winner .compare-name {
-    color: var(--accent-cyan);
-}
-
-.compare-bar {
-    flex: 1;
-    height: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.compare-fill {
-    height: 100%;
-    border-radius: 4px;
-    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
-    transition: width 0.5s ease;
-}
-
-.compare-fill.baseline {
-    background: rgba(148, 163, 184, 0.5);
-}
-
-.compare-value {
-    font-size: 0.8rem;
+.beat-item strong {
+    color: var(--accent-green);
     font-weight: 700;
-    width: 35px;
-    text-align: right;
-    color: var(--text-muted);
-}
-
-.compare-row.winner .compare-value {
-    color: var(--accent-cyan);
-}
-
-.compare-label {
-    display: block;
-    text-align: center;
-    font-size: 0.6rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 8px;
 }
 
 .stack-item-stats {
