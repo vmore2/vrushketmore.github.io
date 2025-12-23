@@ -1028,26 +1028,46 @@ section {
     position: relative;
 }
 
-/* Model Beats - Simple Text Comparisons */
-.model-beats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+/* Metrics Grid - For AgentRank stats */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     margin-bottom: 16px;
 }
 
-.beat-item {
-    padding: 6px 12px;
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid rgba(0, 212, 255, 0.2);
-    border-radius: 20px;
-    font-size: 0.75rem;
-    color: var(--text-secondary);
+.metric-block {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
 }
 
-.beat-item strong {
+.metric-title {
+    display: block;
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.metric-main {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--accent-cyan);
+    margin-bottom: 4px;
+}
+
+.metric-compare {
+    display: block;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+}
+
+.metric-compare strong {
     color: var(--accent-green);
-    font-weight: 700;
 }
 
 .stack-item-stats {
