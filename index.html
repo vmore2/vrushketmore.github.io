@@ -298,146 +298,99 @@
                     </div>
                 </article>
 
-                <!-- AI Agent Memory Stack - Featured -->
-                <div class="featured-stack" data-category="ai-ml">
-                    <div class="featured-stack-header">
-                        <span class="featured-stack-badge">
-                            <i class="fas fa-star"></i>
-                            Featured Research
-                        </span>
-                        <h3 class="featured-stack-title">
-                            <span class="gradient-text">AI Agent Memory Stack</span>
-                        </h3>
-                        <p class="featured-stack-subtitle">
-                            A complete memory infrastructure for multi-agent AI systems. AgentRank retrieves the right
-                            memories with temporal awareness, while CogniHive routes queries to the right expert agent.
+                <!-- AgentRank Card -->
+                <article class="project-card featured" data-category="ai-ml">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #7c3aed 0%, #00d4ff 100%);">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-tag">Novel Embeddings</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AgentRank</h3>
+                        <p class="project-description">
+                            First embedding model with temporal awareness for AI agent memory. Understands
+                            <strong>when</strong> memories happened — 21% better than OpenAI/Cohere embedders.
                         </p>
-                    </div>
-
-                    <div class="stack-projects">
-                        <!-- AgentRank -->
-                        <div class="stack-project">
-                            <div class="stack-project-header">
-                                <div class="stack-project-icon">
-                                    <i class="fas fa-memory"></i>
-                                </div>
-                                <div>
-                                    <h4 class="stack-project-title">AgentRank</h4>
-                                    <span class="stack-project-tagline">Temporal-Aware Embeddings</span>
-                                </div>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">0.65</span>
+                                <span class="metric-label">MRR</span>
                             </div>
-                            <p class="stack-project-description">
-                                The first embedding model that understands <strong>when</strong> memories happened.
-                                Unlike
-                                OpenAI or Cohere embeddings, AgentRank encodes temporal context and memory types
-                                directly
-                                into the vector space.
-                            </p>
-                            <div class="stack-project-metrics">
-                                <div class="stack-metric">
-                                    <span class="stack-metric-value">0.65</span>
-                                    <span class="stack-metric-label">MRR Score</span>
-                                </div>
-                                <div class="stack-metric">
-                                    <span class="stack-metric-value">+21%</span>
-                                    <span class="stack-metric-label">vs Baselines</span>
-                                </div>
-                                <div class="stack-metric">
-                                    <span class="stack-metric-value">99.6%</span>
-                                    <span class="stack-metric-label">Recall@5</span>
-                                </div>
+                            <div class="metric">
+                                <span class="metric-value">+21%</span>
+                                <span class="metric-label">vs Baselines</span>
                             </div>
-                            <ul class="stack-project-features">
-                                <li><i class="fas fa-check"></i> 10 learnable temporal position embeddings</li>
-                                <li><i class="fas fa-check"></i> Memory type awareness (episodic, semantic, procedural)
-                                </li>
-                                <li><i class="fas fa-check"></i> 149M parameter model trained on 500K samples</li>
-                            </ul>
-                            <div class="stack-project-links">
-                                <a href="https://github.com/vmore2/AgentRank-base" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                    <span>GitHub</span>
-                                </a>
-                                <a href="https://pypi.org/project/agentrank/" target="_blank" class="project-link">
-                                    <i class="fab fa-python"></i>
-                                    <span>PyPI</span>
-                                </a>
-                                <a href="https://huggingface.co/vrushket/agentrank-base" target="_blank"
-                                    class="project-link primary">
-                                    <i class="fas fa-cube"></i>
-                                    <span>Model</span>
-                                </a>
+                            <div class="metric">
+                                <span class="metric-value">99.6%</span>
+                                <span class="metric-label">Recall@5</span>
                             </div>
                         </div>
-
-                        <!-- CogniHive -->
-                        <div class="stack-project">
-                            <div class="stack-project-header">
-                                <div class="stack-project-icon">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <div>
-                                    <h4 class="stack-project-title">CogniHive</h4>
-                                    <span class="stack-project-tagline">Transactive Memory System</span>
-                                </div>
-                            </div>
-                            <p class="stack-project-description">
-                                The world's first <strong>Transactive Memory System</strong> for AI agents. Based on
-                                cognitive science research, CogniHive tracks "who knows what" enabling intelligent
-                                query routing across agent teams.
-                            </p>
-                            <div class="stack-project-metrics">
-                                <div class="stack-metric">
-                                    <span class="stack-metric-value">15x</span>
-                                    <span class="stack-metric-label">Token Savings</span>
-                                </div>
-                                <div class="stack-metric">
-                                    <span class="stack-metric-value">6+</span>
-                                    <span class="stack-metric-label">Integrations</span>
-                                </div>
-                                <div class="stack-metric">
-                                    <span class="stack-metric-value">MIT</span>
-                                    <span class="stack-metric-label">Licensed</span>
-                                </div>
-                            </div>
-                            <ul class="stack-project-features">
-                                <li><i class="fas fa-check"></i> "Who knows what" expertise tracking</li>
-                                <li><i class="fas fa-check"></i> Smart query routing to best expert agent</li>
-                                <li><i class="fas fa-check"></i> CrewAI, AutoGen, LangChain, MCP integrations</li>
-                            </ul>
-                            <div class="stack-project-links">
-                                <a href="https://github.com/vmore2/CogniHive" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                    <span>GitHub</span>
-                                </a>
-                                <a href="https://pypi.org/project/cognihive/" target="_blank" class="project-link">
-                                    <i class="fab fa-python"></i>
-                                    <span>PyPI</span>
-                                </a>
-                                <a href="https://huggingface.co/spaces/vrushket/cognihive" target="_blank"
-                                    class="project-link primary">
-                                    <i class="fas fa-cube"></i>
-                                    <span>Demo</span>
-                                </a>
-                            </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">149M Params</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vmore2/AgentRank-base" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://pypi.org/project/agentrank/" target="_blank" class="project-link">
+                                <i class="fab fa-python"></i>
+                                <span>PyPI</span>
+                            </a>
+                            <a href="https://huggingface.co/vrushket/agentrank-base" target="_blank"
+                                class="project-link primary">
+                                <i class="fas fa-cube"></i>
+                                <span>Model</span>
+                            </a>
                         </div>
                     </div>
+                </article>
 
-                    <!-- Synergy Section -->
-                    <div class="stack-synergy">
-                        <div class="synergy-icon">
-                            <i class="fas fa-link"></i>
+                <!-- CogniHive Card -->
+                <article class="project-card" data-category="ai-ml">
+                    <div class="project-image">
+                        <div class="project-placeholder"
+                            style="background: linear-gradient(135deg, #ff0080 0%, #7c3aed 100%);">
+                            <i class="fas fa-brain"></i>
                         </div>
-                        <div class="synergy-content">
-                            <h4>Better Together</h4>
-                            <p>
-                                CogniHive routes questions to the right agent, AgentRank retrieves the right memories.
-                                Together, they form a complete memory infrastructure for production multi-agent systems.
-                            </p>
+                        <div class="project-overlay">
+                            <span class="project-tag">PyPI Package</span>
                         </div>
-                        <i class="fas fa-arrow-right synergy-arrow"></i>
                     </div>
-                </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CogniHive</h3>
+                        <p class="project-description">
+                            World's first Transactive Memory System for multi-agent AI. Routes queries
+                            to the right expert with "who knows what" tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Multi-Agent AI</span>
+                            <span class="tech-tag">CrewAI</span>
+                            <span class="tech-tag">LangChain</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/vmore2/CogniHive" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://pypi.org/project/cognihive/" target="_blank" class="project-link">
+                                <i class="fab fa-python"></i>
+                                <span>PyPI</span>
+                            </a>
+                            <a href="https://huggingface.co/spaces/vrushket/cognihive" target="_blank"
+                                class="project-link primary">
+                                <i class="fas fa-cube"></i>
+                                <span>Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
                 <!-- FinFlow -->
                 <article class="project-card" data-category="data-science">
