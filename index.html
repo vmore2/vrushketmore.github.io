@@ -298,50 +298,33 @@
                     </div>
                 </article>
 
-                <!-- AgentRank Card -->
-                <article class="project-card featured" data-category="ai-ml">
-                    <div class="project-image">
-                        <div class="project-placeholder"
-                            style="background: linear-gradient(135deg, #7c3aed 0%, #00d4ff 100%);">
+                <!-- Memory Stack: AgentRank + CogniHive -->
+                <div class="memory-stack" data-category="ai-ml">
+                    <!-- AgentRank -->
+                    <div class="stack-item">
+                        <div class="stack-item-icon purple">
                             <i class="fas fa-memory"></i>
                         </div>
-                        <div class="project-overlay">
-                            <span class="project-tag">Novel Embeddings</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">AgentRank</h3>
-                        <p class="project-description">
-                            First embedding model with temporal awareness for AI agent memory. Understands
-                            <strong>when</strong> memories happened — 21% better than OpenAI/Cohere embedders.
-                        </p>
-                        <div class="project-metrics">
-                            <div class="metric">
-                                <span class="metric-value">0.65</span>
-                                <span class="metric-label">MRR</span>
+                        <h4>AgentRank</h4>
+                        <span class="stack-item-tagline">Temporal-Aware Embeddings</span>
+                        <p>First embedding model that knows <strong>when</strong> memories happened. +21% better
+                            retrieval than OpenAI/Cohere.</p>
+                        <div class="stack-item-stats">
+                            <div class="stack-stat">
+                                <span class="stack-stat-value">0.65</span>
+                                <span class="stack-stat-label">MRR</span>
                             </div>
-                            <div class="metric">
-                                <span class="metric-value">+21%</span>
-                                <span class="metric-label">vs Baselines</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-value">99.6%</span>
-                                <span class="metric-label">Recall@5</span>
+                            <div class="stack-stat">
+                                <span class="stack-stat-value">99.6%</span>
+                                <span class="stack-stat-label">Recall</span>
                             </div>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Transformers</span>
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">149M Params</span>
-                        </div>
-                        <div class="project-links">
+                        <div class="stack-item-links">
                             <a href="https://github.com/vmore2/AgentRank-base" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
-                                <span>GitHub</span>
                             </a>
                             <a href="https://pypi.org/project/agentrank/" target="_blank" class="project-link">
                                 <i class="fab fa-python"></i>
-                                <span>PyPI</span>
                             </a>
                             <a href="https://huggingface.co/vrushket/agentrank-base" target="_blank"
                                 class="project-link primary">
@@ -350,38 +333,41 @@
                             </a>
                         </div>
                     </div>
-                </article>
 
-                <!-- CogniHive Card -->
-                <article class="project-card" data-category="ai-ml">
-                    <div class="project-image">
-                        <div class="project-placeholder"
-                            style="background: linear-gradient(135deg, #ff0080 0%, #7c3aed 100%);">
+                    <!-- Connector -->
+                    <div class="stack-connector">
+                        <div class="connector-line"></div>
+                        <div class="connector-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span class="connector-label">Powers</span>
+                    </div>
+
+                    <!-- CogniHive -->
+                    <div class="stack-item">
+                        <div class="stack-item-icon pink">
                             <i class="fas fa-brain"></i>
                         </div>
-                        <div class="project-overlay">
-                            <span class="project-tag">PyPI Package</span>
+                        <h4>CogniHive</h4>
+                        <span class="stack-item-tagline">Multi-Agent Memory System</span>
+                        <p>Transactive memory for AI teams. Routes queries to the right expert with "who knows what"
+                            tracking.</p>
+                        <div class="stack-item-stats">
+                            <div class="stack-stat">
+                                <span class="stack-stat-value">6+</span>
+                                <span class="stack-stat-label">Integrations</span>
+                            </div>
+                            <div class="stack-stat">
+                                <span class="stack-stat-value">15x</span>
+                                <span class="stack-stat-label">Token Save</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">CogniHive</h3>
-                        <p class="project-description">
-                            World's first Transactive Memory System for multi-agent AI. Routes queries
-                            to the right expert with "who knows what" tracking.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Multi-Agent AI</span>
-                            <span class="tech-tag">CrewAI</span>
-                            <span class="tech-tag">LangChain</span>
-                        </div>
-                        <div class="project-links">
+                        <div class="stack-item-links">
                             <a href="https://github.com/vmore2/CogniHive" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
-                                <span>GitHub</span>
                             </a>
                             <a href="https://pypi.org/project/cognihive/" target="_blank" class="project-link">
                                 <i class="fab fa-python"></i>
-                                <span>PyPI</span>
                             </a>
                             <a href="https://huggingface.co/spaces/vrushket/cognihive" target="_blank"
                                 class="project-link primary">
@@ -390,7 +376,7 @@
                             </a>
                         </div>
                     </div>
-                </article>
+                </div>
 
                 <!-- FinFlow -->
                 <article class="project-card" data-category="data-science">
