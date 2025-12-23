@@ -1008,8 +1008,95 @@ section {
     font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.stack-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 5px 12px;
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stack-item {
+    position: relative;
+}
+
+/* Model Comparison */
+.model-compare {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 12px;
     margin-bottom: 16px;
-    flex-grow: 1;
+}
+
+.compare-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.compare-row:last-of-type {
+    margin-bottom: 0;
+}
+
+.compare-name {
+    font-size: 0.7rem;
+    font-weight: 600;
+    width: 65px;
+    color: var(--text-secondary);
+}
+
+.compare-row.winner .compare-name {
+    color: var(--accent-cyan);
+}
+
+.compare-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.compare-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    transition: width 0.5s ease;
+}
+
+.compare-fill.baseline {
+    background: rgba(148, 163, 184, 0.5);
+}
+
+.compare-value {
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 35px;
+    text-align: right;
+    color: var(--text-muted);
+}
+
+.compare-row.winner .compare-value {
+    color: var(--accent-cyan);
+}
+
+.compare-label {
+    display: block;
+    text-align: center;
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 8px;
 }
 
 .stack-item-stats {

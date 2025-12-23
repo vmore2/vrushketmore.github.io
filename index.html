@@ -302,22 +302,31 @@
                 <div class="memory-stack" data-category="ai-ml">
                     <!-- AgentRank -->
                     <div class="stack-item">
+                        <span class="stack-badge">Novel Embeddings</span>
                         <div class="stack-item-icon purple">
                             <i class="fas fa-memory"></i>
                         </div>
                         <h4>AgentRank</h4>
                         <span class="stack-item-tagline">Temporal-Aware Embeddings</span>
-                        <p>First embedding model that knows <strong>when</strong> memories happened. +21% better
-                            retrieval than OpenAI/Cohere.</p>
-                        <div class="stack-item-stats">
-                            <div class="stack-stat">
-                                <span class="stack-stat-value">0.65</span>
-                                <span class="stack-stat-label">MRR</span>
+                        <p>First embedding model that knows <strong>when</strong> memories happened.</p>
+
+                        <!-- Model Comparison -->
+                        <div class="model-compare">
+                            <div class="compare-row winner">
+                                <span class="compare-name">AgentRank</span>
+                                <div class="compare-bar">
+                                    <div class="compare-fill" style="width: 100%;"></div>
+                                </div>
+                                <span class="compare-value">0.65</span>
                             </div>
-                            <div class="stack-stat">
-                                <span class="stack-stat-value">99.6%</span>
-                                <span class="stack-stat-label">Recall</span>
+                            <div class="compare-row">
+                                <span class="compare-name">ada-002</span>
+                                <div class="compare-bar">
+                                    <div class="compare-fill baseline" style="width: 83%;"></div>
+                                </div>
+                                <span class="compare-value">0.54</span>
                             </div>
+                            <span class="compare-label">MRR Score</span>
                         </div>
                         <div class="stack-item-links">
                             <a href="https://github.com/vmore2/AgentRank-base" target="_blank" class="project-link">
