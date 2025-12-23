@@ -1037,7 +1037,7 @@ section {
 }
 
 .metric-block {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--gradient-subtle);
     border-radius: 8px;
     padding: 10px;
     text-align: center;
