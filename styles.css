@@ -820,6 +820,10 @@ section {
     background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
 }
 
+.gradient-bg-10 {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
 .project-overlay {
     position: absolute;
     top: 16px;
